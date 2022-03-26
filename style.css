@@ -1,131 +1,178 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-size: 25px;
-    background-image: url("bg2.jpg");
-    background-position: top;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  font-size: 25px;
+  background-image: url("bg2.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .firstpage {
-    position: absolute;
-    z-index: 1;
-    height: 120vh;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.5;
-    margin-top: -5vh;
-    align-self: center;
+  position: absolute;
+  z-index: 1;
+  height: 130vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+  margin-top: -5vh;
+  align-self: center;
 }
 
 .logopage {
-    position: absolute;
-    z-index: 3;
-    left: 50%;
-    top: 50%;
-    height: 200px;
-    width: 200px;
-    margin: -75px 0 0 -110px;
-    background-image: url(WAMO_Bleu.png);
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    align-self: center;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  width: 200px;
+  margin: -75px 0 0 -110px;
+  background-image: url(WAMO_Bleu.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  align-self: center;
 }
 
 .loading {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    top: 50%;
-    height: 200px;
-    width: 200px;
-    margin: -75px 0 0 -110px;
-    border-radius: 50%;
-    border: 12px solid rgba(255, 255, 255, 0.822);
-    border-top: 12px solid crimson;
-    animation: spin 1s linear infinite;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  width: 200px;
+  margin: -75px 0 0 -110px;
+  border-radius: 50%;
+  border: 12px solid rgba(255, 255, 255, 0.822);
+  border-top: 12px solid #013a41;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .content {
-    overflow: hidden;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 8vh;
+  overflow: hidden;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8vh;
 }
 
 .loginbox {
-    background: #e0e0e0ab;
-    text-align: center;
-    border-radius: 15px ;
-    padding: 100px;
-    margin-top: 5%;
+  background: #e0e0e0ab;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+  margin-top: 5%;
+}
+
+.ayman {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  background: #013a41;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+a {
+  width: 40px;
+  height: 40px;
+  background: #013a41;
+  border-radius: 50%;
+  border: 6px solid white;
+  overflow: hidden;
+  transform: translateY(30%);
+}
+
+b {
+  width: 80px;
+  height: 80px;
+  background: #013a41;
+  border-radius: 50%;
+  border: 6px solid white;
+  margin-top: 10;
+  transform: translateY(20%);
+}
+
+c {
+  position: absolute;
+  bottom: 50;
+  width: 150px;
+  height: 200px;
+  background: #013a41;
+  border-radius: 0 0 100rem 10rem;
+  transform: translateY(70%);
 }
 
 .input_field {
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-    padding: 5%;
-    border: none;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5%;
+  border: none;
 }
 
 button {
-    align-content: center;
-    background-color: crimson;
-    width: 200px;
-    height: 30px;
-    border: none;
-    border-radius: 20px;
-    color: #e0e0e0;
+  align-content: center;
+  background-color: #013a41;
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  color: #e0e0e0;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: #e0e0e0;
-    color: crimson;
-    transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #013a41;
+  transition: all 0.2s ease;
 }
 
 .footer {
-    position: sticky;
-    background-color: #f1f1f1b0;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+  position: sticky;
+  background-color: #f1f1f1b0;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
 }
 
 img {
-    width: 40%;
+  width: 40%;
 }
 
 @media only screen and (max-width: 720px) {
-    .loginbox {
-        margin-top: 10%;
-        padding: 70px;
-    }
-    .content {
-        margin-bottom: 15vh;
-    }
+  .loginbox {
+    margin-top: 10%;
+    padding: 70px;
+  }
+  .content {
+    margin-bottom: 15vh;
+  }
 }
