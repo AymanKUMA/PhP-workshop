@@ -95,6 +95,7 @@ button {
     width: 200px;
     height: 30px;
     border: none;
+    border-radius: 20px;
     color: #e0e0e0;
 }
 
